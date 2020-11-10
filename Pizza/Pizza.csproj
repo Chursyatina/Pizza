@@ -132,6 +132,12 @@
   <ItemGroup>
     <None Include="Resources\543pizza1_100912.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="DAL\DAL.csproj">
+      <Project>{f4b8bf29-2194-487d-9c79-33ef0c5bb9b4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

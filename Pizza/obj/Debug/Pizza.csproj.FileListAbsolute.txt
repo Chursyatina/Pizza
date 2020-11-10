@@ -28,3 +28,6 @@ C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.csproj.CoreCompileInputs.cache
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.csproj.CopyComplete
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.exe
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.pdb
+C:\GitHub\Pizza\Pizza\bin\Debug\DAL.dll
+C:\GitHub\Pizza\Pizza\bin\Debug\DAL.pdb
+C:\GitHub\Pizza\Pizza\bin\Debug\DAL.dll.config
