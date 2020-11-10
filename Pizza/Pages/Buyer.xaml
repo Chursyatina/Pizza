@@ -1,0 +1,353 @@
+﻿<Page x:Class="Pizza.Pages.Buyer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pizza.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Buyer">
+
+    <Page.Resources>
+        <Style
+            x:Key="MaterialDesignNavigationRailTabItemWithTitle"
+            BasedOn="{StaticResource MaterialDesignNavigationRailTabItem}"
+            TargetType="TabItem">
+            <Setter Property="Control.Width" Value="Auto" />
+            <Setter Property="Control.Height" Value="Auto" />
+            <Setter Property="Padding" Value="6" />
+        </Style>
+        <Style x:Key="MainMenuTabItemHeader" TargetType="StackPanel">
+            <Setter Property="Control.Width" Value="170" />
+            <Setter Property="Orientation" Value="Horizontal" />
+        </Style>
+        <Style x:Key="MainMenuTabItemHeaderTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="FontWeight" Value="Medium" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="MainMenuTabItemHeaderIcon" TargetType="materialDesign:PackIcon">
+            <Setter Property="Control.Width" Value="22" />
+            <Setter Property="Control.Height" Value="22" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <TabControl materialDesign:ColorZoneAssist.Mode="PrimaryMid" Style="{StaticResource MaterialDesignNavigatilRailTabControl}" >
+
+            <TabItem Style="{StaticResource MaterialDesignNavigationRailTabItemWithTitle}">
+                <TabItem.Header>
+                    <StackPanel Style="{StaticResource MainMenuTabItemHeader}">
+                        <materialDesign:PackIcon Kind="Menu" Style="{StaticResource MainMenuTabItemHeaderIcon}" />
+                        <TextBlock Style="{StaticResource MainMenuTabItemHeaderTitle}">Меню</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Margin="0 15 0 20"
+                        FontSize="18"
+                        Grid.Row="0"
+                        HorizontalAlignment="Center"
+                        Text="Меню выбора пицц">
+                    </TextBlock>
+                    <ScrollViewer  Grid.Row="1" Grid.RowSpan="2">
+                        <ListBox>
+                            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы">
+                                    </TextBlock>
+                                </ListBox>
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы 2">
+                                    </TextBlock>
+                                </ListBox>
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы 3">
+                                    </TextBlock>
+                                </ListBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Grid.Row="2">
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы">
+                                    </TextBlock>
+                                </ListBox>
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы 2">
+                                    </TextBlock>
+                                </ListBox>
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы 3">
+                                    </TextBlock>
+                                </ListBox>
+                            </StackPanel>
+                        </ListBox>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+
+
+            <TabItem Style="{StaticResource MaterialDesignNavigationRailTabItemWithTitle}">
+                <TabItem.Header>
+                    <StackPanel Style="{StaticResource MainMenuTabItemHeader}">
+                        <materialDesign:PackIcon Kind="Pizza" Style="{StaticResource MainMenuTabItemHeaderIcon}" />
+                        <TextBlock Style="{StaticResource MainMenuTabItemHeaderTitle}">Выбранная пицца</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <StackPanel HorizontalAlignment="Stretch">
+                    <Expander HorizontalAlignment="Stretch">
+                        <Expander.Header>
+                            <TextBlock Style="{StaticResource Title}">Название пиццы</TextBlock>
+                        </Expander.Header>
+                        <StackPanel>
+                            <Grid  TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <Image 
+                                    Grid.RowSpan ="2" 
+                                    Grid.Column="0"
+                                    Source="../Resources/pizza.jpg" />
+
+                                <TextBlock
+                                    Grid.Column ="1" 
+                                    Grid.Row="0"
+                                    Text="Какое то очень длинное и красочное описание выбранной пиццы, настолько прекрасное и глубокое, что занимает сразу несколько строк"
+                                    TextWrapping="Wrap" >
+
+                                </TextBlock>
+
+                                <TextBlock
+                                    Grid.Column ="1" 
+                                    Grid.Row="1"
+                                    Text="Здесь будет состав выбранной пиццы"
+                                    TextWrapping="Wrap" >
+                                </TextBlock>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                    <Expander HorizontalAlignment="Stretch" IsExpanded="True">
+                        <Expander.Header>
+                            <TextBlock Style="{StaticResource Title}">Модификация</TextBlock>
+                        </Expander.Header>
+                        <StackPanel>
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    Text="Тип теста"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="10"
+                                    TextWrapping="Wrap">
+                                </TextBlock>
+                                <TextBlock
+                                    Text="Размер пиццы"
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Margin="10"
+                                    TextWrapping="Wrap">
+                                </TextBlock>
+                                <TextBlock
+                                    Text="Соус"
+                                    Grid.Row="2"
+                                    Grid.Column="0"
+                                    Margin="10"
+                                    TextWrapping="Wrap">
+                                </TextBlock>
+                                <TextBlock
+                                    Text="Итоговая цена"
+                                    Grid.Row="3"
+                                    Grid.Column="0"
+                                    Margin="10"
+                                    TextWrapping="Wrap">
+                                </TextBlock>
+                                <ComboBox
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Margin="10">
+                                    <TextBlock>Традиционное</TextBlock>
+                                    <TextBlock>Тонкое</TextBlock>
+                                </ComboBox>
+                                <ComboBox
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="10">
+                                    <TextBlock>20 см</TextBlock>
+                                    <TextBlock>30 см</TextBlock>
+                                    <TextBlock>40 см</TextBlock>
+                                </ComboBox>
+                                <ComboBox
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Margin="10">
+                                    <TextBlock>Сырный</TextBlock>
+                                    <TextBlock>Горчичный</TextBlock>
+                                    <TextBlock>Карри</TextBlock>
+                                    <TextBlock>Кисло-Сладкий</TextBlock>
+                                    <TextBlock>Барбекью</TextBlock>
+                                    <TextBlock>Без соуса</TextBlock>
+                                </ComboBox>
+                                <TextBlock
+                                    Text="Здесь будет итоговая цена"
+                                    Grid.Row="3"
+                                    Grid.Column="1"
+                                    Margin="10"
+                                    TextWrapping="Wrap">
+                                </TextBlock>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                    <Grid Margin="0 40 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1">
+                            Добавить в корзину
+                        </Button>
+                    </Grid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Style="{StaticResource MaterialDesignNavigationRailTabItemWithTitle}">
+                <TabItem.Header>
+                    <StackPanel Style="{StaticResource MainMenuTabItemHeader}">
+                        <materialDesign:PackIcon Kind="Basket" Style="{StaticResource MainMenuTabItemHeaderIcon}" />
+                        <TextBlock Style="{StaticResource MainMenuTabItemHeaderTitle}">Корзина</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Margin="0 15 0 20"
+                        FontSize="18"
+                        Grid.Row="0"
+                        HorizontalAlignment="Center"
+                        Text="Ваша корзина">
+                    </TextBlock>
+                    <ScrollViewer  Grid.Row="1" Grid.RowSpan="2">
+                        <ListBox>
+                            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы">
+                                    </TextBlock>
+                                </ListBox>
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы 2">
+                                    </TextBlock>
+                                </ListBox>
+                                <ListBox>
+                                    <Image Source="../Resources/pizza.jpg" Height="250" Width="250"></Image>
+                                    <TextBlock
+                                Margin="70 0 0 0"
+                                Text="Название пиццы 3">
+                                    </TextBlock>
+                                </ListBox>
+                            </StackPanel>
+                        </ListBox>
+                    </ScrollViewer>
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock
+                                    HorizontalAlignment="Center"
+                                    Text="Итоговая цена"
+                                    Grid.Column="0"
+                                    Margin="10"
+                                    TextWrapping="Wrap">
+                        </TextBlock>
+                        <TextBlock
+                                    HorizontalAlignment="Center"
+                                    Text="Здесь будет итоговая цена"
+                                    Grid.Column="1"
+                                    Margin="10"
+                                    TextWrapping="Wrap">
+                        </TextBlock>
+                        <Button 
+                            
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Width="300">
+                            Подтвердить заказ
+                        </Button>
+
+                        <Button 
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Width="250">
+                            Очистить заказ
+                        </Button>
+
+                        <Button 
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Width="250">
+                            Удалить выбранную позицию
+                        </Button>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>
