@@ -15,22 +15,21 @@ namespace Pizza.Commands
             remove { CommandManager.RequerySuggested -= value; }
         }
 
-        private Action _execute;
+        private Action<object> execute;
+        private Func<object, bool> canExecute;
 
-        public LogInCommand(Action execute)
+        public LogInCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
-            _execute = execute;
+            this.execute = execute;
+            this.canExecute = canExecute;
         }
           
 
         public bool CanExecute(object parameter)
         {
-            return true;
+            return canExecute == null || canExecute(parameter);
         }
 
-        public void Execute(object parameter)
-        {
-            _execute.Invoke();
-        }
+        public void Execute(object parameter) => execute(parameter);
     }
 }
