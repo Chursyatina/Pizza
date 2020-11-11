@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza", "Pizza.csproj", "{1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F4B8BF29-2194-487D-9C79-33EF0C5BB9B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLLL", "..\BLLL\BLLL.csproj", "{8732AD5E-E0D3-4316-B11E-7C7906340195}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{9910F89D-CE7E-4724-B2C5-FDDF399E4308}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{F4B8BF29-2194-487D-9C79-33EF0C5BB9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B8BF29-2194-487D-9C79-33EF0C5BB9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B8BF29-2194-487D-9C79-33EF0C5BB9B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8732AD5E-E0D3-4316-B11E-7C7906340195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8732AD5E-E0D3-4316-B11E-7C7906340195}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8732AD5E-E0D3-4316-B11E-7C7906340195}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8732AD5E-E0D3-4316-B11E-7C7906340195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9910F89D-CE7E-4724-B2C5-FDDF399E4308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9910F89D-CE7E-4724-B2C5-FDDF399E4308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9910F89D-CE7E-4724-B2C5-FDDF399E4308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9910F89D-CE7E-4724-B2C5-FDDF399E4308}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

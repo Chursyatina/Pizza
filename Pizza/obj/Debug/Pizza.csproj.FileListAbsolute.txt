@@ -1,5 +1,4 @@
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.csprojAssemblyReference.cache
-C:\GitHub\Pizza\Pizza\obj\Debug\MainWindow.g.cs
 C:\GitHub\Pizza\Pizza\obj\Debug\App.g.cs
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza_MarkupCompile.cache
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza_MarkupCompile.lref
@@ -15,12 +14,7 @@ C:\GitHub\Pizza\Pizza\bin\Debug\EntityFramework.SqlServer.xml
 C:\GitHub\Pizza\Pizza\bin\Debug\MaterialDesignColors.pdb
 C:\GitHub\Pizza\Pizza\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\GitHub\Pizza\Pizza\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Authorisation.g.cs
-C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Buyer.g.cs
 C:\GitHub\Pizza\Pizza\obj\Debug\App.baml
-C:\GitHub\Pizza\Pizza\obj\Debug\MainWindow.baml
-C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Authorisation.baml
-C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Buyer.baml
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.g.resources
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.Properties.Resources.resources
 C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.csproj.GenerateResource.cache
@@ -31,3 +25,10 @@ C:\GitHub\Pizza\Pizza\obj\Debug\Pizza.pdb
 C:\GitHub\Pizza\Pizza\bin\Debug\DAL.dll
 C:\GitHub\Pizza\Pizza\bin\Debug\DAL.pdb
 C:\GitHub\Pizza\Pizza\bin\Debug\DAL.dll.config
+C:\GitHub\Pizza\Pizza\obj\Debug\MainWindow.g.cs
+C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Authorisation.g.cs
+C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Buyer.g.cs
+C:\GitHub\Pizza\Pizza\obj\Debug\MainWindow.baml
+C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Authorisation.baml
+C:\GitHub\Pizza\Pizza\obj\Debug\Pages\Buyer.baml
+C:\GitHub\Pizza\Pizza\obj\Debug\GeneratedInternalTypeHelper.g.cs
